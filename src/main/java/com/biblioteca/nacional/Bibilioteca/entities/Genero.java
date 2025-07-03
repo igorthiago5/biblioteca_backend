@@ -1,8 +1,10 @@
 package com.biblioteca.nacional.Bibilioteca.entities;
 
 import jakarta.persistence.*;
+import javafx.scene.input.DataFormat;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 @Entity
 @Table(name = "tb_genero")
@@ -18,6 +20,7 @@ public class Genero {
     private LocalDateTime data_criacao;
 
     public Genero(){
+
         this.data_criacao = LocalDateTime.now();
     }
     public Long getIdGenero() {
